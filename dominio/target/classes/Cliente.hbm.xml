@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 08-abr-2012 20:55:30 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <subclass name="ar.com.test.spring.dominio.Cliente" extends="ar.com.test.spring.dominio.Persona" discriminator-value="Cliente" lazy="false">
+        
+        <property name="actividadPrincipal" type="java.lang.String">
+            <column name="ACTIVIDADPRINCIPAL" />
+        </property>
+    </subclass>
+</hibernate-mapping>

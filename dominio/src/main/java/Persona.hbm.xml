@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 09-abr-2012 3:13:54 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="ar.com.test.spring.dominio.Persona" table="PERSONA" abstract="true">
+        <id name="idPersona" type="int">
+            <column name="IDPERSONA" />
+            <generator class="assigned" />
+        </id>
+        <discriminator type="string">
+            <column name="DISCR_COL" />
+        </discriminator>
+        <property name="serialVersionUID" type="long" access="field">
+            <column name="SERIALVERSIONUID" />
+        </property>
+        <property name="razonSocial" type="java.lang.String">
+            <column name="RAZONSOCIAL" />
+        </property>
+        <property name="cuitCuil" type="java.lang.String">
+            <column name="CUITCUIL" />
+        </property>
+        <property name="contactoEmpresa" type="java.lang.String">
+            <column name="CONTACTOEMPRESA" />
+        </property>
+        <property name="telefonoFax" type="java.lang.String">
+            <column name="TELEFONOFAX" />
+        </property>
+        <property name="mail" type="java.lang.String">
+            <column name="MAIL" />
+        </property>
+        <property name="domicilio" type="java.lang.String">
+            <column name="DOMICILIO" />
+        </property>
+        <property name="codigoPostal" type="int">
+            <column name="CODIGOPOSTAL" />
+        </property>
+        <property name="ciudad" type="java.lang.String">
+            <column name="CIUDAD" />
+        </property>
+        <property name="codigoProvincia" type="int">
+            <column name="CODIGOPROVINCIA" />
+        </property>
+        <property name="comentarios" type="java.lang.String">
+            <column name="COMENTARIOS" />
+        </property>
+    </class>
+</hibernate-mapping>
